@@ -4,12 +4,12 @@ import requests
 app = Flask(__name__)
 
 # Your local API URL
-"https://returning-charity-speaking-marilyn.trycloudflare.com" = "http://192.168.10.39:5000"
+LOCAL_API = "http://192.168.10.39:5000"
 
 @app.route("/<path:path>", methods=["GET", "POST"])
 def proxy(path):
     # Build the URL for the local API
-    url = f"{"https://returning-charity-speaking-marilyn.trycloudflare.com"}/{path}"
+    url = f"{LOCAL_API}/{path}"
 
     try:
         if request.method == "POST":
