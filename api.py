@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Your local API URL
-LOCAL_API = "https://malpractice-absolute-increasing-promises.trycloudflare.com"
+LOCAL_API = "https://poet-particular-visual-badge.trycloudflare.com"
 
 @app.route("/<path:path>", methods=["GET", "POST"])
 def proxy(path):
